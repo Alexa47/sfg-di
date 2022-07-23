@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 import guru.springframework.sfg.di.controllers.ConstructorInjectedController;
+import guru.springframework.sfg.di.controllers.I18nController;
 import guru.springframework.sfg.di.controllers.MyController;
 import guru.springframework.sfg.di.controllers.PropertyInjectedController;
 import guru.springframework.sfg.di.controllers.SetterInjectedController;
@@ -29,6 +30,9 @@ public class SfgDiApplication {
 		System.out.println("Konstruktor");
 		ConstructorInjectedController cic=(ConstructorInjectedController)ctx.getBean("constructorInjectedController");
 		System.out.println(cic.getGreeting());
+		
+		I18nController i18c=(I18nController)ctx.getBean("i18nController");
+		System.out.println(i18c.sayHello());
 	}
 
 }
