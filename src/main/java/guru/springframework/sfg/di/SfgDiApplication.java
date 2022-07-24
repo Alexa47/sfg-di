@@ -17,8 +17,8 @@ public class SfgDiApplication {
 	public static void main(String[] args) {
 		ApplicationContext ctx=SpringApplication.run(SfgDiApplication.class, args);
 		MyController mc=(MyController) ctx.getBean("myController");
-		String greeting=mc.sayHello();
-		System.out.println(greeting);
+		System.out.println("Primary bean");
+		System.out.println(mc.sayHello());
 		
 		System.out.println("Property");
 		PropertyInjectedController pic=(PropertyInjectedController)ctx.getBean("propertyInjectedController");
