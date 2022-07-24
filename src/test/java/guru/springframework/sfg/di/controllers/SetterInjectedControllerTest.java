@@ -1,13 +1,9 @@
 package guru.springframework.sfg.di.controllers;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import guru.springframework.sfg.di.services.GreetingService;
 import guru.springframework.sfg.di.services.SetterInjectedGreetingService;
-import guru.springframework.sfg.di.services.ConstructorInjectedGreetingService;
 
 class SetterInjectedControllerTest {
 
